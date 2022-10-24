@@ -2,8 +2,8 @@
   --main-grey-color: #757575;
   --black-color: #212121;
   --blue-color: #2196f3;
-  --bg-color: #2f303a;
-  --section-bgc: #f5f4fa;
+  --bg-color-dark: #2f303a;
+  --bg-color-light: #f5f4fa;
 }
 
 /* скрываем ненужные нам штуки :) */
@@ -20,7 +20,7 @@
   margin: -1px;
 }
 
-/* Общие стили */
+/* general styles */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -33,10 +33,10 @@ body {
 }
 
 .btn {
-  background: var(--blue-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
   border-radius: 4px;
   border: transparent;
+  cursor: pointer;
 }
 
 .list {
@@ -60,7 +60,7 @@ body {
   outline: 2px tomato solid;
 }
 
-/* header */
+/* header general */
 .page-header {
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -100,9 +100,10 @@ body {
   color: var(--main-grey-color);
 }
 
+/* page studio begin */
 /* hero section */
 .hero {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-dark);
 }
 
 .main-header {
@@ -119,10 +120,18 @@ body {
 
 .btn-studio {
   font-weight: 700;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: #ffffff;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-studio:hover,
+.btn-studio:focus {
+  color: var(--black-color);
+  background-color: var(--bg-color-light);
 }
 
 /* features section */
@@ -164,25 +173,61 @@ body {
   color: var(--main-grey-color);
 }
 
-/* footer */
+/* page studio end */
+
+/* page portfolio begin */
+/* Section projects */
+.prtfl-btn-list .btn {
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  text-align: center;
+  background-color: var(--bg-color-light);
+}
+
+.prtfl-btn-list .btn:hover,
+.prtfl-btn-list .btn:focus {
+  background-color: var(--blue-color);
+  color: #ffffff;
+}
+
+/* page portfolio end */
+.prtfl-prjct-lst-header {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--black-color);
+}
+
+.prtfl-prjct-lst-description {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--main-grey-color);
+}
+
+/* footer General*/
 .foo {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-dark);
 }
 
 .logo-part-footer {
   color: #fff;
 }
 
-.addres-list {
+.address-list {
   font-style: normal;
   line-height: calc(24 / 14);
 }
 
-.addres-list .link {
+.address-list .link {
   color: rgba(255, 255, 255, 0.6);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.addres-list .address-link {
+.address-list .address-link {
   color: #ffffff;
 }
