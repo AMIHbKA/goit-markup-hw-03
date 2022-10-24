@@ -336,7 +336,6 @@ body {
 }
 
 .border-div {
-  padding-top: 20px;
   margin-bottom: 0;
   border: 1px solid #eeeeee;
   border-top: none;
@@ -345,6 +344,7 @@ body {
 .portfolio-projects-list-header {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 20px;
   margin-left: 24px;
 
   font-weight: 700;
