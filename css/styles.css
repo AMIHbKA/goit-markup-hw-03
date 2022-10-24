@@ -335,9 +335,17 @@ body {
   margin-bottom: 30px;
 }
 
-.portfolio-projects-list-header {
-  margin-top: 20px;
+.border-div {
+  padding-top: 20px;
   margin-bottom: 0;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.portfolio-projects-list-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -349,6 +357,7 @@ body {
 .portfolio-projects-list-description {
   margin-top: 4px;
   margin-bottom: 20px;
+  margin-left: 24px;
 
   font-size: 16px;
   line-height: calc(30 / 16);
